@@ -31,7 +31,7 @@ const AppBar = () => {
         className="w-full" 
         onClick={() => ""}>
       <div
-        className={`fixed top-0 left-0 h-full w-2/3 sm:w-2/3 md:w-1/2 lg:w-1/4 bg-gray-800 text-white transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 h-full w-2/3 sm:w-2/3 md:w-1/2 lg:w-1/4 bg-gray-800 text-white transform transition-transform duration-300 z-50 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         
@@ -39,7 +39,7 @@ const AppBar = () => {
         <div className="p-4">
         <button
             onClick={toggleSidebar}
-            className="mt-4 bg-red-500 text-white rounded-md text-center py-1 float-right"
+            className=" mt-4 bg-red-500 text-white rounded-md text-center py-1 float-right"
           >
             X
           </button>
